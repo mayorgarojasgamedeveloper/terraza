@@ -1,0 +1,23 @@
+{
+  "name": "terraza",
+  "version": "1.0.0",
+  "description": "Proyecto programacion para internet",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayorgarojasgamedeveloper/terraza.git"
+  },
+  "author": "Fernando Mayorga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayorgarojasgamedeveloper/terraza/issues"
+  },
+  "homepage": "https://github.com/mayorgarojasgamedeveloper/terraza#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3"
+  }
+}
