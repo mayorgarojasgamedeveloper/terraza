@@ -12,11 +12,23 @@ app.get('/', (req, res) => {
 });
 
 app.get('/galeria', (req, res) => {
-  res.send('Galeria');
+  res.render('galeria.ejs');
+});
+
+app.get('/promociones', (req, res) => {
+  res.render('promociones.ejs');
+});
+
+app.get('/contacto', (req, res) => {
+  res.render('contacto.ejs');
+});
+
+app.get('/iniciar-sesion', (req, res) => {
+  res.render('iniciar-sesion.ejs');
 });
 
 app.get('*', (req, res) => {
-  res.send('404 not found.');
+  res.render('404.ejs');
 });
 
 /**LISTEN **/
