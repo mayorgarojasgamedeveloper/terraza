@@ -31,6 +31,10 @@ app.get('/iniciar-sesion', (req, res) => {
   res.render('iniciar-sesion.ejs');
 });
 
+app.get('/panel-admin', (req, res) => {
+  res.render('panel-admin.ejs');
+});
+
 app.get('*', (req, res) => {
   res.render('404.ejs');
 });
