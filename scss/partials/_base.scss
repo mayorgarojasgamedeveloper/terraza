@@ -12,8 +12,18 @@ h2.center {
 
 .col-sm {
   margin: 10px;
-  
+
   .card {
     margin: 0 auto;
   }
+}
+
+.table tr:nth-child(odd),
+.table tr:nth-child(even)  {
+  text-align: center;
+}
+
+.table tr:nth-child(odd):hover,
+.table tr:nth-child(even):hover  {
+  background-color: #adadad;
 }

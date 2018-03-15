@@ -37,19 +37,19 @@ app.get('/panel-admin', (req, res) => {
   res.render('panel-admin.ejs');
 });
 
-app.get('/panel-admin/usuarios', (req, res) => {
-  res.render('usuarios/index.ejs');
+/*Clientes*/
+
+app.get('/cliente-inicio', (req, res) => {
+  res.render('./clientes/index.ejs');
 });
 
-app.get('/panel-admin/usuarios/editar', (req, res) => {
-  res.render('usuarios/editar.ejs');
+app.get('/cliente-editar', (req, res) => {
+  res.render('./clientes/editar.ejs');
 });
 
-app.get('/panel-admin/usuarios/vista', (req, res) => {
-  res.render('usuarios/vista.ejs');
+app.get('/cliente-vista', (req, res) => {
+  res.render('./clientes/vista.ejs');
 });
-
-
 
 
 

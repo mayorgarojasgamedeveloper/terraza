@@ -8,18 +8,49 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <title>USUARIOS</title>
+    <title>CLIENTES</title>
   </head>
   <body>
 
-    <% include partials/nav-admin.ejs %>
+    <% include ../partials/nav-admin-in.ejs %>
     <br>
 
-    <h1 class="display-4 center">Lista De Usuarios</h1>
+    <h1 class="display-4 center">Lista De Clientes</h1>
     <br>
     <br>
 
-    
+    <section class="container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido Paterno</th>
+            <th scope="col">Apellido Materno</th>
+            <th scope="col">Celular</th>
+            <th scope="col">Calificación</th>
+            <th scope="col">Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(var i = 0; i < 15; i++) { %>
+          <tr>
+            <td>Nombre #<%-i%></td>
+            <td>Paterno #<%-i%></td>
+            <td>Materno #<%-i%></td>
+            <td>Celular #<%-i%></td>
+            <td><%- (i%5)+1 %></td>
+            <td>
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#"><img src="./img/iconos/eye-2x.png" alt=""></a></li>
+                <li class="page-item"><a class="page-link" href="#"><img src="./img/iconos/pencil-2x.png" alt=""></a></li>
+                <li class="page-item"><a class="page-link" href="#"><img src="./img/iconos/trash-2x.png" alt=""></a></li>
+              </ul>
+            </td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
