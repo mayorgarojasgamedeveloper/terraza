@@ -15,6 +15,10 @@ app.get('/galeria', (req, res) => {
   res.render('galeria.ejs');
 });
 
+app.get('/calendario', (req, res) => {
+  res.render('calendario.ejs');
+});
+
 app.get('/promociones', (req, res) => {
   res.render('promociones.ejs');
 });
