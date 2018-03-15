@@ -31,9 +31,31 @@ app.get('/iniciar-sesion', (req, res) => {
   res.render('iniciar-sesion.ejs');
 });
 
+/*Admin*/
+
 app.get('/panel-admin', (req, res) => {
   res.render('panel-admin.ejs');
 });
+
+app.get('/panel-admin/usuarios', (req, res) => {
+  res.render('usuarios/index.ejs');
+});
+
+app.get('/panel-admin/usuarios/editar', (req, res) => {
+  res.render('usuarios/editar.ejs');
+});
+
+app.get('/panel-admin/usuarios/vista', (req, res) => {
+  res.render('usuarios/vista.ejs');
+});
+
+
+
+
+
+
+
+/*Otros*/
 
 app.get('*', (req, res) => {
   res.render('404.ejs');

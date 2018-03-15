@@ -8,41 +8,39 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <title>INICIAR SESIÓN</title>
+    <title>PANEL DE CONTROL</title>
   </head>
   <body>
 
     <% include partials/nav.ejs %>
     <br>
 
-    <h1 class="display-4 center">Iniciar Sesión</h1>
-
+    <h1 class="display-4 center">Panel De Control</h1>
+    <br>
+    <br>
     <section class="container">
-      <br>
-      <h3> Llena los siguientes datos.</h2>
-      <form target="_blank" action="/panel-admin">
+      <div class="row">
 
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">Usuario&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+        <% for (var i = 0; i < 9; i++) { %>
+
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="./img/panel-admin/administradores.png" alt="administradores">
+            <div class="card-body">
+              <h5 class="card-title">Promo Mi Boda</h5>
+              <p class="card-text">
+                50 Mesas <br>
+                400 Sillas <br>
+                400 Platillos <br>
+                400 Postres
+              </p>
+              <a href="#" class="btn btn-success">$20,000</a>
+            </div>
           </div>
-          <input type="text" class="form-control" placeholder="fernandomayorga" required>
         </div>
 
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">Contraseña</span>
-          </div>
-          <input type="password" class="form-control" placeholder="***********" required>
-        </div>
+        <% } %>
 
-        <br>
-        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-      </form>
-
-      <br><br>
-      <div class="alert alert-warning" role="alert">
-        Datos de usuario incorrectos.
       </div>
     </section>
 
