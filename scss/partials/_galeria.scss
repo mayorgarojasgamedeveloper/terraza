@@ -4,30 +4,16 @@
   column-gap: 1em;
 }
 
-@media(min-width: 30em) {
+@media(min-width: 40em) {
   #masonry {
     column-count: 3;
     column-gap: 1em;
   }
 }
 
-@media(min-width: 40em) {
-  #masonry {
-    column-count: 4;
-    column-gap: 1em;
-  }
-}
-
 @media(min-width: 60em) {
   #masonry {
-    column-count: 5;
-    column-gap: 1em;
-  }
-}
-
-@media(min-width: 75em) {
-  #masonry {
-    column-count: 6;
+    column-count: 4;
     column-gap: 1em;
   }
 }
@@ -51,30 +37,6 @@
 
 .item.active {
   animation-name: active-in;
-  animation-duration: 0.7s;
-  animation-fill-mode: forwards;
-  animation-direction: alternate;
-}
-
-.item.active:before {
-  content: "+";
-  transform: rotate(45deg);
-  font-size: 48px;
-  color: white;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color:rgba(0,0,0,0.85);
-  border-radius: 50%;
-  width:48px;
-  height:48px;
-  text-align:center;
-  line-height:48px;
-  z-index:12;
-}
-
-.item.active img {
-  animation-name: active-in-img;
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
   animation-direction: alternate;

@@ -17,76 +17,23 @@
     <h1 class="display-4 center">Galeria</h1>
 
     <div class="container">
-	<div class="row">
-		<div class="col-md-12">
-		    <div class="well text-center"><h2>Full Responsive CSS Masonry Grid Gallery Or Blog</h2></div>
-		</div>
-	</div>
-	<div class="container">
-  <div id="masonry">
-    <div class="item">
-      <img src="http://placehold.it/1200x1200" alt="" />
+    	<div class="row">
+    		<div class="col-md-12">
+    		    <div class="well text-center"><h2>Terraza Don Leon</h2></div>
+    		</div>
+    	</div>
+    	<div class="container">
+      <div id="masonry">
+        <% for(var i = 1; i <= 35; i++) { %>
+        <div class="item">
+          <a href="./img/galeria/<%- i %>.png" target="_blank">
+            <img src="./img/galeria/<%- i %>.png" alt="Frame <%- i %>" />
+          </a>
+        </div>
+        <% } %>
+      </div>
     </div>
-    <div class="item">
-      <img src="http://placehold.it/300x200" alt="" />
     </div>
-    <div class="item">
-      <img src="http://placehold.it/300x300" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/200x200" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/300x250" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/200x320" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/300x200" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/300x300" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/200x200" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/300x250" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/200x320" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/300x200" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/300x300" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/200x200" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/300x250" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/200x320" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/300x200" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/300x300" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/200x200" alt="" />
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/300x250" alt="" />
-    </div>
-  </div>
-</div>
-</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
