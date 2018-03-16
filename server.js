@@ -6,6 +6,8 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
+var port = process.env.PORT || 8080;
+
 /** ROUTING*/
 app.get('/', (req, res) => {
   res.render('home.ejs');
@@ -62,5 +64,6 @@ app.get('*', (req, res) => {
 });
 
 /**LISTEN **/
-app.listen(3000);
-console.log('Server started');
+app.listen(port, function() {
+	console.log('Our app is running on http://localhost:' + port);
+});
