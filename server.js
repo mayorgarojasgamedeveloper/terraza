@@ -129,6 +129,12 @@ app.get('/proveedores-vista/:id', (req, res) => {
   res.render('./proveedores/vista.ejs', {id: req.params.id});
 });
 
+/*Calendario*/
+
+app.get('/calendario-admin', (req, res) => {
+  res.render('./calendario/index.ejs');
+});
+
 /*Otros*/
 
 app.get('*', (req, res) => {
