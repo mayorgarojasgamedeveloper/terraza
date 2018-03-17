@@ -15,10 +15,72 @@
     <% include ../partials/nav-admin-in.ejs %>
     <br>
 
-    <h1 class="display-4 center">Ver Cliente</h1>
+    <h1 class="display-4 center">Ver Cliente #<%-id%></h1>
     <br>
     <br>
 
+    <section class="container">
+      <form>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" value="fernando@gmail.com" readonly="true">
+        </div>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" value="Fernando" readonly="true">
+        </div>
+        <div class="form-group">
+          <label for="ap-paterno">Apellido Paterno:</label>
+          <input type="text" class="form-control" id="ap-paterno" value="Mayorga" readonly="true">
+        </div>
+        <div class="form-group">
+          <label for="ap-materno">Apellido Materno:</label>
+          <input type="text" class="form-control" id="ap-materno" value="Rojas" readonly="true">
+        </div>
+        <div class="form-group">
+          <label for="tel-cel">Tel. Celular:</label>
+          <input type="text" class="form-control" id="tel-cel" value="3398787646" readonly="true">
+        </div>
+        <div class="form-group">
+          <label for="tel-fijo">Tel. Fijo:</label>
+          <input type="text" class="form-control" id="tel-fijo" value="36297665" readonly="true">
+        </div>
+      </form>
+    </section>
+
+    <h2 class="display-5 center">Eventos del cliente</h1>
+    <br>
+
+    <section class="container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Costo total</th>
+            <th scope="col">Estatus</th>
+            <th scope="col">Anticipo</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(var i = 0; i < 3; i++) { %>
+          <tr>
+            <td>27/03/2018 03:00pm</td>
+            <td>Fernando Mayorga Rojas</td>
+            <td>$1500</td>
+            <td>Apartado</td>
+            <td>$500</td>
+            <td>
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="/evento-vista/<%- i %>"><img src="../img/iconos/eye-2x.png" alt=""></a></li>
+              </ul>
+            </td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </section>
 
 
     <!-- Optional JavaScript -->

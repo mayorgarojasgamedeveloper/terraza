@@ -45,12 +45,12 @@ app.get('/cliente-inicio', (req, res) => {
   res.render('./clientes/index.ejs');
 });
 
-app.get('/cliente-editar', (req, res) => {
-  res.render('./clientes/editar.ejs');
+app.get('/cliente-editar/:id', (req, res) => {
+  res.render('./clientes/editar.ejs', {id: req.params.id});
 });
 
-app.get('/cliente-vista', (req, res) => {
-  res.render('./clientes/vista.ejs');
+app.get('/cliente-vista/:id', (req, res) => {
+  res.render('./clientes/vista.ejs', {id: req.params.id});
 });
 
 
