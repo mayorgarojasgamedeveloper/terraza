@@ -10,42 +10,42 @@ Podra llevar control de los usuarios, administradores y las rentas del terreno.
 ## Links
 ## Publicas
 
-[Inicio](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/) <br />
-[Iniciar Sesión](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/login.html) <br />
-[Contacto](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/contact.html) <br />
-[Calendario](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/calendar.html) <br />
-[Galeria](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/gallery.html) <br />
-[Paquetes](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/package.html) <br />
+[Inicio](https://terraza-don-leon.herokuapp.com/) <br />
+[Iniciar Sesión](https://terraza-don-leon.herokuapp.com/iniciar-sesion) <br />
+[Contacto](https://terraza-don-leon.herokuapp.com/contacto) <br />
+[Calendario](https://terraza-don-leon.herokuapp.com/calendario) <br />
+[Galeria](https://terraza-don-leon.herokuapp.com/galeria) <br />
+[Paquetes](https://terraza-don-leon.herokuapp.com/promociones) <br />
 ## Administrativas
 
-[Inicio Administrador](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/index_admin.html) <br />
+[Panel De Control De Administrador](https://terraza-don-leon.herokuapp.com/panel-admin) <br />
 Administradores <br />
-	[Inicio](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/admin/) <br />
-	[Editar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/admin/edit.html) <br />
-	[Crear](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/admin/create.html) <br />
-	[Mostrar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/admin/view.html) <br />
+	[Inicio](https://terraza-don-leon.herokuapp.com/administrador-inicio) <br />
+	[Editar](https://terraza-don-leon.herokuapp.com/administrador-editar/0) <br />
+	[Crear](https://terraza-don-leon.herokuapp.com/administrador-crear) <br />
+	[Mostrar](https://terraza-don-leon.herokuapp.com/administrador-vista/0) <br />
 Clienes <br />
-	[Inicio](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/client/index) <br />
-	[Editar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/client/edit.html) <br />
-	[Crear](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/client/create.html) <br />
-	[Mostrar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/client/view.html) <br />
+	[Inicio](https://terraza-don-leon.herokuapp.com/cliente-inicio) <br />
+	[Editar](https://terraza-don-leon.herokuapp.com/cliente-editar/0) <br />
+	[Crear](https://terraza-don-leon.herokuapp.com/cliente-crear) <br />
+	[Mostrar](https://terraza-don-leon.herokuapp.com/cliente-vista/0) <br />
 Eventos <br />
-	[Inicio](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/event/) <br />
-	[Editar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/event/edit.html) <br />
-	[Crear](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/event/create.html) <br />
-	[Mostrar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/event/view.html) <br />
+	[Inicio](https://terraza-don-leon.herokuapp.com/evento-inicio) <br />
+	[Editar](https://terraza-don-leon.herokuapp.com/evento-editar/0) <br />
+	[Crear](https://terraza-don-leon.herokuapp.com/evento-crear) <br />
+	[Mostrar](https://terraza-don-leon.herokuapp.com/evento-vista/0) <br />
 Paquetes <br />
-	[Inicio](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/packege/) <br />
-	[Editar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/packege/edit.html) <br />
-	[Crear](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/packege/create.html) <br />
-	[Mostrar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/packege/view.html) <br />
+	[Inicio](https://terraza-don-leon.herokuapp.com/paquetes-inicio) <br />
+	[Editar](https://terraza-don-leon.herokuapp.com/paquetes-editar/0) <br />
+	[Crear](https://terraza-don-leon.herokuapp.com/paquetes-crear) <br />
+	[Mostrar](https://terraza-don-leon.herokuapp.com/paquetes-vista/0) <br />
 Proveedores <br />
-	[Inicio](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/provider/) <br />
-	[Editar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/provider/edit.html) <br />
-	[Crear](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/provider/create.html) <br />
-	[Mostrar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/provider/view.html) <br />
+	[Inicio](https://terraza-don-leon.herokuapp.com/proveedores-inicio) <br />
+	[Editar](https://terraza-don-leon.herokuapp.com/proveedores-editar/0) <br />
+	[Crear](https://terraza-don-leon.herokuapp.com/proveedores-crear) <br />
+	[Mostrar](https://terraza-don-leon.herokuapp.com/proveedores-vista/0) <br />
 Calendario <br />
-	[Administrar](https://mayorgarojasgamedeveloper.github.io/terraza-donleon/calendar/) <br />
+	[Administrar](https://terraza-don-leon.herokuapp.com/calendario-admin) <br />
 
 ## Getting Started
 
@@ -103,6 +103,14 @@ El codigo debera ser escrito de la manera mas concreta posible.
 if(Test == 1) {
 	Test = 3;
 }
+```
+
+### SASS Software
+
+El equipo usa un software para compilar SASS llamado SCOUT. Para descargar scout puedes darle click al siguinte enlace.
+
+```
+http://scout-app.io/
 ```
 
 ## Authors
