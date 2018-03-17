@@ -20,34 +20,37 @@
     <section class="container">
       <br>
       <h3> Llena los siguientes datos.</h2>
-      <form target="_blank" action="/panel-admin">
+      <form>
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon1">Usuario&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
           </div>
-          <input type="text" class="form-control" placeholder="fernandomayorga" required>
+          <input type="text" class="form-control" id="login-usuario" placeholder="fernandomayorga" required>
         </div>
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">Contraseña</span>
+            <span class="input-group-text" id="login-contrasena">Contraseña</span>
           </div>
           <input type="password" class="form-control" placeholder="***********" required>
         </div>
 
         <br>
-        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        <button type="button" class="btn btn-primary" id="btn-login">Iniciar Sesión</button>
       </form>
 
       <br><br>
-      <div class="alert alert-warning" role="alert">
+      <div class="alert alert-warning element-hidden" id="error-alert" role="alert">
         Datos de usuario incorrectos.
       </div>
     </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/general.js" type="text/javascript">
+
+    </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
