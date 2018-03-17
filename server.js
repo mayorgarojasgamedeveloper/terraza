@@ -45,6 +45,10 @@ app.get('/cliente-inicio', (req, res) => {
   res.render('./clientes/index.ejs');
 });
 
+app.get('/cliente-crear', (req, res) => {
+  res.render('./clientes/crear.ejs');
+});
+
 app.get('/cliente-editar/:id', (req, res) => {
   res.render('./clientes/editar.ejs', {id: req.params.id});
 });
