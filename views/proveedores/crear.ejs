@@ -8,14 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
-    <title>CIENTES/CREAR</title>
+    <title>PROVEEDOR/CREAR</title>
   </head>
   <body>
 
     <% include ../partials/nav-admin-in.ejs %>
     <br>
 
-    <h1 class="display-4 center">Crear Cliente</h1>
+    <h1 class="display-4 center">Crear Proveedor</h1>
     <br>
     <br>
 
@@ -44,6 +44,10 @@
         <div class="form-group">
           <label for="tel-fijo">Tel. Fijo: <span class="req">*</span></label>
           <input type="text" class="form-control" id="tel-fijo" placeholder="36297665" required>
+        </div>
+        <div class="form-group">
+          <label for="ocupacion">Ocupación: <span class="req">*</span></label>
+          <input type="text" class="form-control" id="ocupacion" placeholder="Luz y Sonido" required>
         </div>
         <button type="submit" class="btn btn-primary">Crear</button>
       </form>

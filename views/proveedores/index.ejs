@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>PROVEEDORES</title>
+  </head>
+  <body>
+
+    <% include ../partials/nav-admin-in.ejs %>
+    <br>
+
+    <h1 class="display-4 center">Lista De Proveedores</h1>
+    <br>
+    <br>
+
+    <section class="container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido Paterno</th>
+            <th scope="col">Apellido Materno</th>
+            <th scope="col">Celular</th>
+            <th scope="col">Ocupación</th>
+            <th scope="col">Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" target="_blank" href="/proveedores-crear/<%- i %>"><img src="./img/iconos/plus-2x.png" alt=""></a></li>
+              </ul>
+            </td>
+          </tr>
+          <% for(var i = 0; i < 8; i++) { %>
+          <tr>
+            <td>Nombre #<%-i%></td>
+            <td>Paterno #<%-i%></td>
+            <td>Materno #<%-i%></td>
+            <td>Celular #<%-i%></td>
+            <td>Luz y Sonido</td>
+            <td>
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" target="_blank" href="/proveedores-vista/<%- i %>"><img src="./img/iconos/eye-2x.png" alt=""></a></li>
+                <li class="page-item"><a class="page-link" target="_blank" href="/proveedores-editar/<%- i %>"><img src="./img/iconos/pencil-2x.png" alt=""></a></li>
+                <li class="page-item"><a class="page-link" href="#"><img src="./img/iconos/trash-2x.png" alt=""></a></li>
+              </ul>
+            </td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
