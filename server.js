@@ -75,7 +75,23 @@ app.get('/administrador-vista/:id', (req, res) => {
   res.render('./administrador/vista.ejs', {id: req.params.id});
 });
 
+/*Evento*/
 
+app.get('/evento-inicio', (req, res) => {
+  res.render('./evento/index.ejs');
+});
+
+app.get('/evento-crear', (req, res) => {
+  res.render('./evento/crear.ejs');
+});
+
+app.get('/evento-editar/:id', (req, res) => {
+  res.render('./evento/editar.ejs', {id: req.params.id});
+});
+
+app.get('/evento-vista/:id', (req, res) => {
+  res.render('./evento/vista.ejs', {id: req.params.id});
+});
 
 
 /*Otros*/
