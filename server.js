@@ -93,6 +93,23 @@ app.get('/evento-vista/:id', (req, res) => {
   res.render('./evento/vista.ejs', {id: req.params.id});
 });
 
+/*Evento*/
+
+app.get('/paquetes-inicio', (req, res) => {
+  res.render('./paquetes/index.ejs');
+});
+
+app.get('/paquetes-crear', (req, res) => {
+  res.render('./paquetes/crear.ejs');
+});
+
+app.get('/paquetes-editar/:id', (req, res) => {
+  res.render('./paquetes/editar.ejs', {id: req.params.id});
+});
+
+app.get('/paquetes-vista/:id', (req, res) => {
+  res.render('./paquetes/vista.ejs', {id: req.params.id});
+});
 
 /*Otros*/
 
