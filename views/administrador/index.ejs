@@ -8,14 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <title>CLIENTES</title>
+    <title>ADMINISTRADORES</title>
   </head>
   <body>
 
     <% include ../partials/nav-admin-in.ejs %>
     <br>
 
-    <h1 class="display-4 center">Lista De Clientes</h1>
+    <h1 class="display-4 center">Lista De Administradores</h1>
     <br>
     <br>
 
@@ -23,11 +23,8 @@
       <table class="table table-striped">
         <thead>
           <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Apellido Paterno</th>
-            <th scope="col">Apellido Materno</th>
-            <th scope="col">Celular</th>
-            <th scope="col">Calificación</th>
+            <th scope="col">Email</th>
+            <th scope="col">Usuario</th>
             <th scope="col">Acción</th>
           </tr>
         </thead>
@@ -35,26 +32,20 @@
           <tr>
             <td></td>
             <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
             <td>
               <ul class="pagination">
-                <li class="page-item"><a class="page-link" target="_blank" href="/cliente-crear/<%- i %>"><img src="./img/iconos/plus-2x.png" alt=""></a></li>
+                <li class="page-item"><a class="page-link" target="_blank" href="/administrador-crear/<%- i %>"><img src="./img/iconos/plus-2x.png" alt=""></a></li>
               </ul>
             </td>
           </tr>
           <% for(var i = 0; i < 15; i++) { %>
           <tr>
-            <td>Nombre #<%-i%></td>
-            <td>Paterno #<%-i%></td>
-            <td>Materno #<%-i%></td>
-            <td>Celular #<%-i%></td>
-            <td><%- (i%5)+1 %></td>
+            <td>Email #<%-i%></td>
+            <td>Usuario #<%-i%></td>
             <td>
               <ul class="pagination">
-                <li class="page-item"><a class="page-link" target="_blank" href="/cliente-vista/<%- i %>"><img src="./img/iconos/eye-2x.png" alt=""></a></li>
-                <li class="page-item"><a class="page-link" target="_blank" href="/cliente-editar/<%- i %>"><img src="./img/iconos/pencil-2x.png" alt=""></a></li>
+                <li class="page-item"><a class="page-link" target="_blank" href="/administrador-vista/<%- i %>"><img src="./img/iconos/eye-2x.png" alt=""></a></li>
+                <li class="page-item"><a class="page-link" target="_blank" href="/administrador-editar/<%- i %>"><img src="./img/iconos/pencil-2x.png" alt=""></a></li>
                 <li class="page-item"><a class="page-link" href="#"><img src="./img/iconos/trash-2x.png" alt=""></a></li>
               </ul>
             </td>

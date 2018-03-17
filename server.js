@@ -57,6 +57,23 @@ app.get('/cliente-vista/:id', (req, res) => {
   res.render('./clientes/vista.ejs', {id: req.params.id});
 });
 
+/*Administrador*/
+
+app.get('/administrador-inicio', (req, res) => {
+  res.render('./administrador/index.ejs');
+});
+
+app.get('/administrador-crear', (req, res) => {
+  res.render('./administrador/crear.ejs');
+});
+
+app.get('/administrador-editar/:id', (req, res) => {
+  res.render('./administrador/editar.ejs', {id: req.params.id});
+});
+
+app.get('/administrador-vista/:id', (req, res) => {
+  res.render('./administrador/vista.ejs', {id: req.params.id});
+});
 
 
 
