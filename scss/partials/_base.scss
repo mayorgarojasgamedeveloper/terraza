@@ -31,3 +31,12 @@ h2.center {
 .table tr:nth-child(even):hover  {
   background-color: #adadad;
 }
+
+.error,
+.error:focus {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+}
