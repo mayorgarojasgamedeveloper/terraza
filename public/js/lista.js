@@ -58,7 +58,14 @@ buttonEdit.on('click', function() {
 });
 
 buttonDelete.on('click', function() {
-  swal({
+
+  if (confirm("Se borraran los elemenotos permanentemente!")) {
+    swal('Se eliminaron los elementos.');
+  } else {
+    swal('Acción cancelada');
+  }
+
+  /*swal({
     title: "Estas seguro que quieres borrar este elemento(s)?",
     text: "Una vez borres este elemento no se podra recuperar!",
     icon: "warning",
@@ -67,19 +74,21 @@ buttonDelete.on('click', function() {
   })
   .then((willDelete) => {
     if (willDelete) {
+
       $.each( selectItems, function( key, value ) {
         let item = $(value);
         if(item.is(':checked')) {
           console.log('Se borro item: ' + item.val());
         }
       });
+
       swal("Elemento(s) borrado.", {
         icon: "success",
       });
     } else {
       swal("Acción cancelada.");
     }
-  });
+  });*/
 });
 
 buttonSelectAll.on('click', function() {
