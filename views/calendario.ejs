@@ -1,3 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <script type='text/javascript' src='jquery.js'></script>
+    <script type='text/javascript' src='fullcalendar.js'></script>
+
+    <title>Inicio</title>
+  </head>
+  <body>
+      <div id='calendar'></div>
+
+      <script>
+          $(document).ready(function() {
+            // página cargada, inicializamos el calendario...
+            $('#calendar').fullCalendar({
+                height : 450,
+                width  : 650,
+                events : [
+                {
+                    title  : 'event1',
+                    start  : '2010-01-01'
+                },
+                {
+                    title  : 'event2',
+                    start  : '2010-01-05',
+                    end    : '2010-01-07'
+                },
+                {
+                    title  : 'event3',
+                    start  : '2010-01-09 12:30:00',
+                    allDay : false // will make the time show
+                }
+            ]
+            })
+          });
+      </script>
+  </body>
+</html>
+
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
